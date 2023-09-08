@@ -40,7 +40,7 @@ void serial_init(uint32_t BAUD_RATE, int serial_port){
         if (tcsetattr(serial_port, TCSANOW, &tty) != 0) {
             printf("Error %i from tcsetattr: %s\n", errno, strerror(errno));
         }
-        //========================================================
+     
     }     
 }
 
